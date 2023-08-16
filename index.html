@@ -6,78 +6,97 @@
     <meta name="keywords" content="daria, cv, resume" />
     <meta name="description" content="Это сайт - резюме Дарьи Садчиковой" />
     <title>Daria Resume</title>
+    <link rel="stylesheet" href="css.css" />
   </head>
   <body>
-    <img src="фото.jpg" alt="Дарья Садчикова фото" width="200" />
-    <h1>Дарья Садчикова</h1>
-    <p>
-      Я <strong>дизайнер и медсестра</strong> по образованию. Давно хотела
-      изучать программирование и вот решилась.
-    </p>
-    <p>
-      <em>Люблю узнавать что-то новое, но и батониться порой тоже люблю</em>
-    </p>
+    <div class="conteiner">
+      <div class="info">
+        <img src="фото.jpg" alt="Дарья Садчикова фото" class="avatar" />
 
-    <h4>Список социальных сетей:</h4>
+        <div class="info-text">
+          <h1>Дарья Садчикова</h1>
+          <p>
+            Я <strong>дизайнер и медсестра</strong> по образованию. Давно хотела
+            изучать программирование и вот решилась.
+          </p>
+          <p>
+            <em
+              >Люблю узнавать что-то новое, но и батониться порой тоже люблю</em
+            >
+          </p>
 
-    <a href="https://www.instagram.com/daria__sadchikova/" target="_blank"
-      >Instagram</a
-    >
-    |
-    <a href="https://vk.com/anemosha" target="_blank">VK</a>
+          <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
-
-    <ol>
-      <li>Кулинария</li>
-      <li>Медицина</li>
-      <li>Айкидо</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td>Клиническая больница 25</td>
-            <td>Медсестра</td>
-            <td>2017-2018</td>
-        </tr>
-        <tr>
-            <td>Частная клиника</td>
-            <td>Медсестра</td>
-            <td>2018-2019</td>
-        </tr>
-        <tr>
-            <td>Частная лаборатория</td>
-            <td>Медсестра</td>
-            <td>2021-2022</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form>
-      <div>
-        <label for="name">Ваше Имя:</label>
-        <input type="text" id="name" placeholder="Введите имя"/>
+          <a href="https://www.instagram.com/daria__sadchikova/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://vk.com/anemosha" target="_blank">VK</a>
+        </div>
       </div>
-      <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите emeil"/>
+      <div class="card hobbi">
+        <h2>Мои хобби</h2>
+
+        <ol class="list">
+          <li>Кулинария</li>
+          <li>Медицина</li>
+          <li>Айкидо</li>
+        </ol>
       </div>
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+      <div class="card work">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <!-- <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead> -->
+          <tbody>
+            <tr>
+              <td>Клиническая больница</td>
+              <td>Медсестра</td>
+              <td>2017-2018</td>
+            </tr>
+            <tr>
+              <td>Частная клиника</td>
+              <td>Медсестра</td>
+              <td>2018-2019</td>
+            </tr>
+            <tr>
+              <td>Частная лаборатория</td>
+              <td>Медсестра</td>
+              <td>2021-2022</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <input type="submit" value="Отправить!">
-    </form>
+
+      <form class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше Имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите emeil" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            cols="25"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+        <input type="submit" value="Отправить!" class="btn" />
+      </form>
+    </div>
   </body>
 </html>
